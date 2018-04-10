@@ -1,0 +1,10 @@
+[
+(TryWith (Pred (Succ Tru)) (If Tru (Succ Zero) Zero)),
+(Succ Fls),
+(Pred (Succ (Pred Tru))),
+(If (IsZero Zero) (Succ Zero) (Tru)),
+(TryWith Zero Tru),
+(TryWith (Succ Zero) Fls),
+(Pred (Succ (IsZero Tru))),
+(TryWith (Pred Zero) (If (IsZero Zero) Tru Zero))
+]

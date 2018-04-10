@@ -1,0 +1,17 @@
+if iszero 0 then true else error -> true
+if error then 0 else succ pred 0 -> error
+if false then 0 else succ pred 0 -> error
+try pred 0 with succ 0 -> succ 0
+pred try succ succ 0 with pred succ 0 -> succ 0
+try if true then iszero pred succ 0 else false with error -> true
+try if false then iszero 0 else error with false -> false
+if iszero pred pred succ succ 0 then if true then succ 0 else 0 else try pred 0 with try error with succ 0 -> succ 0
+if iszero pred pred succ succ succ 0 then if true then succ 0 else 0 else try pred 0 with try error with succ succ 0 -> succ succ 0
+try error with if iszero succ 0 then true else try error with false -> false
+try pred 0 with try error with try iszero 0 with false -> true
+if try error with iszero 0 then if false then succ succ 0 else pred succ 0 else 0 -> 0
+if true then pred succ pred succ 0 else succ 0 -> 0
+try try try error with iszero 0 with false with true -> true
+try try try pred 0 with error with error with succ 0 -> succ 0
+try error with try iszero succ 0 with error -> false
+try error with try pred 0 with error -> error
